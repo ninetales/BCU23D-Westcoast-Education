@@ -1,0 +1,110 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "account-created": "2024-01-15",
+            "role": "admin",
+            "fname": "Fname",
+            "lname": "Lname",
+            "email": "demo@example.com",
+            "password": "demo123",
+            "password-reset": {
+                "request": {
+                    "date": "2024-01-15",
+                    "time": "13:37"
+                },
+                "recover-hash": "as9da0s9d89jdsfj89asd9g36fgg6346fgfewefwefwefdi9k93j"
+            },
+            "session": {
+                "iat": "2024-01-15",
+                "exp": "2024-01-20",
+                "token": "k9k39d8j8wndjknz8usdfu8shfj90sjd9fjsd9fj0sjs9dfjs0d9jfs0d9jf"
+            },
+            "address": {
+                "city": "Gothenburg",
+                "postal-code": "123 23",
+                "street": "Example street",
+                "housenumber": 4,
+                "street-number": 19,
+                "geo-position": {
+                    "lat": 123123123,
+                    "long": 123123123
+                }
+            },
+            "account-status": {
+                "status": "active",
+                "date": "2024-01-15"
+            },
+            "login-timestamp": [
+                {
+                    "date": "2024-01-15",
+                    "time": "13:37",
+                    "ip": "0303030303",
+                    "status": "success"
+                },
+                {
+                    "date": "2024-01-15",
+                    "time": "13:39",
+                    "ip": "0303030303",
+                    "status": "failed"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "account-created": "2024-01-15",
+            "role": "admin",
+            "fname": "Fname",
+            "lname": "Lname",
+            "email": "demo@example.com",
+            "password": "demo123",
+            "password-reset": {
+                "request": {
+                    "date": "2024-01-15",
+                    "time": "13:37"
+                },
+                "recover-hash": "as9da0s9d89jdsfj89asd9g36fgg6346fgfewefwefwefdi9k93j"
+            },
+            "session": {
+                "iat": "2024-01-15",
+                "exp": "2024-01-20",
+                "token": "k9k39d8j8wndjknz8usdfu8shfj90sjd9fjsd9fj0sjs9dfjs0d9jfs0d9jf"
+            },
+            "address": {
+                "city": "Gothenburg",
+                "postal-code": "123 23",
+                "street": "Example street",
+                "housenumber": 4,
+                "street-number": 19,
+                "geo-position": {
+                    "lat": 123123123,
+                    "long": 123123123
+                }
+            },
+            "account-status": {
+                "status": "active",
+                "date": "2024-01-15"
+            },
+            "login-timestamp": [
+                {
+                    "date": "2024-01-15",
+                    "time": "13:37",
+                    "ip": "0303030303",
+                    "status": "success"
+                },
+                {
+                    "date": "2024-01-15",
+                    "time": "13:39",
+                    "ip": "0303030303",
+                    "status": "failed"
+                }
+            ]
+        }
+    ],
+    "courses": [
+        {
+            "id": 1,
+            "courseName": "JavaScript"
+        }
+    ]
+}

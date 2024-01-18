@@ -1,0 +1,21 @@
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 0;
+}
+
+.cta {
+    background-color: $primaryColor;
+    color: #fff;
+    text-decoration: none;
+    border-radius: .3rem;
+
+    &:hover {
+        background-color: shade($primaryColor, 10%);
+    }
+}
+
+.toggle-sidebar-btn {
+    display: none;
+    min-width: 80px;
+}

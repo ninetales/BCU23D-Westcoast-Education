@@ -1,0 +1,58 @@
+// ==================================================================================
+// _forms.scss
+// ==================================================================================
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    max-width: 500px;
+
+    label {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    input,
+    button {
+        min-height: 60px;
+        padding: 0 10px;
+        // border: 1px solid #e1e1e1;
+        border: 1px solid #e7e7e7;
+        border-radius: .3rem;
+    }
+
+    input[type="submit"],
+    input[type="button"],
+    button {
+        cursor: pointer;
+        border: none;
+        min-height: 60px;
+        transition: background-color .2s ease-in;
+        background-color: #333;
+        color: #fff;
+
+        &:hover {
+            background-color: #000;
+        }
+    }
+
+    .names-con {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .address-con {
+        display: grid;
+        grid-template-columns: 1fr 80px;
+        gap: 20px;
+    }
+
+    .terms {
+        text-align: center;
+        font-size: pxToRem(13);
+        color: #757575;
+    }
+}
