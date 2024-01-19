@@ -1,4 +1,4 @@
-.form-notice {
+.input-notice {
     display: block;
     color: #ac0c0c;
     background-color: #fff2f2;
@@ -11,4 +11,13 @@
 .input-error {
     background-color: #fffafa;
     border-color: #ffb5b5;
+}
+
+.form-notice {
+    display: block;
+    background-color: #ffdce0;
+    border: 1px solid #f0cfd3;
+    color: #8d2a3d;
+    padding: 20px;
+    border-radius: .3rem;
 }

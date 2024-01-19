@@ -2,18 +2,18 @@
     "users": [
         {
             "id": 1,
-            "account-created": "2024-01-15",
+            "accountCreated": "2024-01-15",
             "role": "admin",
             "fname": "Fname",
             "lname": "Lname",
             "email": "demo@example.com",
             "password": "demo123",
-            "password-reset": {
+            "passwordReset": {
                 "request": {
                     "date": "2024-01-15",
                     "time": "13:37"
                 },
-                "recover-hash": "as9da0s9d89jdsfj89asd9g36fgg6346fgfewefwefwefdi9k93j"
+                "recoverHash": "as9da0s9d89jdsfj89asd9g36fgg6346fgfewefwefwefdi9k93j"
             },
             "session": {
                 "iat": "2024-01-15",
@@ -22,20 +22,20 @@
             },
             "address": {
                 "city": "Gothenburg",
-                "postal-code": "123 23",
+                "postalCode": "123 23",
                 "street": "Example street",
-                "housenumber": 4,
-                "street-number": 19,
-                "geo-position": {
+                "houseNumber": 4,
+                "streetNumber": 19,
+                "geoPosition": {
                     "lat": 123123123,
                     "long": 123123123
                 }
             },
-            "account-status": {
+            "accountState": {
                 "status": "active",
                 "date": "2024-01-15"
             },
-            "login-timestamp": [
+            "loginTimestamp": [
                 {
                     "date": "2024-01-15",
                     "time": "13:37",
@@ -52,18 +52,18 @@
         },
         {
             "id": 2,
-            "account-created": "2024-01-15",
+            "accountCreated": "2024-01-15",
             "role": "admin",
             "fname": "Fname",
             "lname": "Lname",
-            "email": "demo@example.com",
+            "email": "matt@example.com",
             "password": "demo123",
-            "password-reset": {
+            "passwordReset": {
                 "request": {
                     "date": "2024-01-15",
                     "time": "13:37"
                 },
-                "recover-hash": "as9da0s9d89jdsfj89asd9g36fgg6346fgfewefwefwefdi9k93j"
+                "recoverHash": "as9da0s9d89jdsfj89asd9g36fgg6346fgfewefwefwefdi9k93j"
             },
             "session": {
                 "iat": "2024-01-15",
@@ -72,20 +72,20 @@
             },
             "address": {
                 "city": "Gothenburg",
-                "postal-code": "123 23",
+                "postalCode": "123 23",
                 "street": "Example street",
-                "housenumber": 4,
-                "street-number": 19,
-                "geo-position": {
+                "houseNumber": 4,
+                "streetNumber": 19,
+                "geoPosition": {
                     "lat": 123123123,
                     "long": 123123123
                 }
             },
-            "account-status": {
+            "accountState": {
                 "status": "active",
                 "date": "2024-01-15"
             },
-            "login-timestamp": [
+            "loginTimestamp": [
                 {
                     "date": "2024-01-15",
                     "time": "13:37",
