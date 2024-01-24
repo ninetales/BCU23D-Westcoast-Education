@@ -5,13 +5,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Westcoast Education</title>
+    <link rel="stylesheet" href="/assets/styles/style.css">
 
-    <link rel="stylesheet" href="/styles/style.css">
-    <script src="/js/app.js" type="module" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Zen+Maru+Gothic:wght@300&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css" />
+
+
+    <script src="/lib/app.js" type="module" defer></script>
 </head>
 
 <body>
-    <h1>Hello World</h1>
+
+    <header>
+        <div class="header__inner-con container container--wide">
+            <a href="/index.html" class="logo">Westcoast Education</a>
+            <nav>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                </ul>
+                <ul data-logged-out="">
+                    <li><a href="/pages/login.html">Log in</a></li>
+                    <li><a href="/pages/register.html" class="cta">Sign up</a></li>
+                </ul>
+                <ul data-logged-in="">
+                    <li><a href="">Profile</a></li>
+                    <li><button id="logout-btn" class="cta">Log out</button></li>
+                </ul>
+                <button class="toggle-sidebar-btn" data-toggle-sidebar=""><i class="iconoir-menu"></i></button>
+            </nav>
+        </div><!-- .container -->
+    </header>
+
+    <div class="container">
+        <h1>Homepage</h1>
+    </div><!-- .container -->
 </body>
 
 </html>

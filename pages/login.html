@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Westcoast Education</title>
+    <link rel="stylesheet" href="/assets/styles/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Zen+Maru+Gothic:wght@300&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css" />
+
+
+    <script src="/lib/app.js" type="module" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="header__inner-con container container--wide">
+            <a href="/index.html" class="logo">Westcoast Education</a>
+            <nav>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                </ul>
+                <ul data-logged-out="">
+                    <li><a href="/pages/login.html">Log in</a></li>
+                    <li><a href="/pages/register.html" class="cta">Sign up</a></li>
+                </ul>
+                <ul data-logged-in="">
+                    <li><a href="">Profile</a></li>
+                    <li><button id="logout-btn" class="cta">Log out</button></li>
+                </ul>
+                <button class="toggle-sidebar-btn" data-toggle-sidebar=""><i class="iconoir-menu"></i></button>
+            </nav>
+        </div><!-- .container -->
+    </header>
+
+    <div class="container">
+
+        <h1>Log in</h1>
+
+        <section class="credentials">
+            <h3>Dummy accounts</h3>
+            <div class="credentials__container">
+                <h4>Admin:</h4>
+                <div class="cridentials__row">
+                    <span class="credentials__label">Email:</span>
+                    <span class="credentials__value">admin@demo.com</span>
+                </div>
+
+                <div class="cridentials__row">
+                    <span class="credentials__label">Password:</span>
+                    <span class="credentials__value">demo</span>
+                </div>
+
+            </div>
+
+            <div class="credentials__container">
+                <h4>Student:</h4>
+                <div class="cridentials__row">
+                    <span class="credentials__label">Email:</span>
+                    <span class="credentials__value">student@demo.com</span>
+                </div>
+                <div class="cridentials__row">
+                    <span class="credentials__label">Password:</span>
+                    <span class="credentials__value">demo</span>
+                </div>
+            </div>
+        </section>
+
+        <form action="" data-login-form="" id="loginForm">
+            <label>
+                <span>Email</span>
+                <input type="email" name="email" required>
+            </label>
+            <label>
+                <span>Password</span>
+                <input type="password" name="password" required>
+            </label>
+            <label class="remember-me-con">
+                <input type="checkbox" name="rememberMe">
+                <span>Remember me</span>
+            </label>
+            <input type="submit" value="Log in">
+        </form>
+
+    </div><!-- .container -->
+
+</body>
+
+</html>
