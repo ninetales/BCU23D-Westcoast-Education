@@ -27,9 +27,14 @@
             <nav>
                 <ul>
                     <li><a href="/index.html">Home</a></li>
-                    <li><a href="/pages/about.html">About us</a></li>
+                </ul>
+                <ul data-logged-out="">
                     <li><a href="/pages/login.html">Log in</a></li>
                     <li><a href="/pages/register.html" class="cta">Sign up</a></li>
+                </ul>
+                <ul data-logged-in="">
+                    <li><a href="">Profile</a></li>
+                    <li><button id="logout-btn" class="cta">Log out</button></li>
                 </ul>
                 <button class="toggle-sidebar-btn" data-toggle-sidebar=""><i class="iconoir-menu"></i></button>
             </nav>
@@ -86,12 +91,12 @@
 
             <label>
                 <span>Password*</span>
-                <input type="password" name="password" required>
+                <input type="password" name="register[1][password]" required>
             </label>
 
             <label>
                 <span>Repeat Password*</span>
-                <input type="password" name="repeatPassword" required>
+                <input type="password" name="register[2][passwordRepeat]" required>
             </label>
 
             <input type="submit" value="Register">

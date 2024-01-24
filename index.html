@@ -27,9 +27,14 @@
             <nav>
                 <ul>
                     <li><a href="/index.html">Home</a></li>
-                    <li><a href="/pages/about.html">About us</a></li>
+                </ul>
+                <ul data-logged-out="">
                     <li><a href="/pages/login.html">Log in</a></li>
                     <li><a href="/pages/register.html" class="cta">Sign up</a></li>
+                </ul>
+                <ul data-logged-in="">
+                    <li><a href="">Profile</a></li>
+                    <li><button id="logout-btn" class="cta">Log out</button></li>
                 </ul>
                 <button class="toggle-sidebar-btn" data-toggle-sidebar=""><i class="iconoir-menu"></i></button>
             </nav>
