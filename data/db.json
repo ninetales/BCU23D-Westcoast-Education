@@ -59,7 +59,7 @@
             "durationInDays": 7,
             "location": {
                 "online": true,
-                "classroom": false
+                "classroom": true
             },
             "image": {
                 "src": "https://example.com/web_dev_course_image",

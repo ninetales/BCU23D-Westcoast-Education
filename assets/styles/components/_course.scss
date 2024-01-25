@@ -1,0 +1,52 @@
+#courses {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+    .course-card {
+        border: 1px solid #eee;
+
+        &__img-con {
+            position: relative;
+            overflow: hidden;
+
+            img {
+                object-fit: cover;
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        &__featured {
+            position: absolute;
+            z-index: 1;
+            top: 10px;
+            left: 10px;
+            padding: 7px 10px;
+            display: inline-block;
+            background-color: #fff;
+            border-radius: .3rem;
+        }
+
+        &__body {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 20px;
+        }
+
+        &__book-link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            background-color: #fdfdfd;
+            text-decoration: none;
+            margin-top: 10px;
+            border: 1px solid #004cff;
+            color: blue;
+            border-radius: .5rem;
+            box-shadow: 0px 3px 9px 0px #0000000a;
+        }
+    }
+}
