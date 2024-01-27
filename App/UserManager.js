@@ -3,11 +3,16 @@ import { settings } from "../utilities/config.js";
 
 export default class UserManager {
 
+    #userId = 0;
+    constructor(userId) {
+        this.#userId = userId;
+    }
+
     async getUsers() {
 
         try {
             const http = new HttpClient(`${settings.DB_USER_PATH}`);
-            const result = http.get();
+            const result = await http.get();
             return result;
         } catch (error) {
             throw new Error(error.message);
@@ -15,10 +20,20 @@ export default class UserManager {
 
     }
 
+    async getSingleUser() {
+        try {
+            const http = new HttpClient(`${settings.DB_USER_PATH}?id=${this.#userId}`);
+            const result = await http.get();
+            return result[0];
+        } catch (error) {
+            throw new Error(error.message);
+        }
+    }
+
     async addNewUser(user) {
 
         const http = new HttpClient(`${settings.DB_USER_PATH}`);
-        const result = http.add(user);
+        const result = await http.add(user);
         return result;
     }
 

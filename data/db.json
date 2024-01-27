@@ -3,8 +3,8 @@
         {
             "id": 1,
             "role": "admin",
-            "fname": "Admin",
-            "lname": "Ipsum",
+            "fname": "Alex",
+            "lname": "Benedict",
             "email": "admin@demo.com",
             "password": "demo",
             "phone": "00 00 00 00 00",
@@ -16,21 +16,13 @@
             "accountState": {
                 "status": "active",
                 "date": "2024-01-15"
-            },
-            "courses": [
-                {
-                    "courseId": 1,
-                    "paymentStatus": "paid",
-                    "dateOfBooking": "2024-01-14",
-                    "location": "remote"
-                }
-            ]
+            }
         },
         {
             "id": 2,
             "role": "student",
-            "fname": "Student",
-            "lname": "Ipsum",
+            "fname": "Stevie",
+            "lname": "Abbott",
             "email": "student@demo.com",
             "password": "demo",
             "phone": "00 00 00 00 00",
@@ -361,6 +353,22 @@
             },
             "featured": false,
             "price": 2800
+        }
+    ],
+    "enrollments": [
+        {
+            "id": 1,
+            "userId": 1,
+            "courseId": 1,
+            "paymentStatus": "paid",
+            "dateOfBooking": "2024-01-14"
+        },
+        {
+            "id": 2,
+            "userId": 1,
+            "courseId": 2,
+            "paymentStatus": "paid",
+            "dateOfBooking": "2024-01-14"
         }
     ]
 }
