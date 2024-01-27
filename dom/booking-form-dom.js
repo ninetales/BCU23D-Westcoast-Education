@@ -1,5 +1,9 @@
 import CookieHandler from "../lib/cookieHandler.js";
 import UserManager from "../App/UserManager.js";
+import BookingManager from "../App/BookingManager.js";
+import { standardMessage } from "./shared-dom.js";
+
+const userId = new CookieHandler().getLoggedInUserIdCookie();
 
 const bookingForm = (courseId) => {
     const form = document.createElement('form');
@@ -18,6 +22,12 @@ const bookingForm = (courseId) => {
     form.appendChild(createInput('Address*', 'address', '', '', true));
     form.appendChild(createInput('Email*', 'email', '', '', true));
     form.appendChild(createInput('Phone*', 'phone', '', '', true));
+
+    const hiddenFieldUserId = document.createElement('input');
+    hiddenFieldUserId.setAttribute('name', 'userId');
+    hiddenFieldUserId.setAttribute('type', 'hidden');
+    hiddenFieldUserId.value = userId;
+    form.appendChild(hiddenFieldUserId);
 
     const hiddenFieldCourseId = document.createElement('input');
     hiddenFieldCourseId.setAttribute('name', 'courseId');
@@ -53,7 +63,20 @@ const bookingForm = (courseId) => {
 
     form.addEventListener('submit', (e) => {
         e.preventDefault();
-        console.log('submit!');
+        const bookingData = new FormData(form);
+        const obj = Object.fromEntries(bookingData.entries());
+
+        const makeBooking = async () => {
+            await new BookingManager(userId, courseId, obj.firstname, obj.lastname, obj.address, obj.date, obj.email, obj.phone).bookCourse()
+        }
+        if (makeBooking()) {
+            form.innerHTML = '';
+            form.appendChild(standardMessage('Booking completed! :)', 'success'));
+        } else {
+            form.innerHTML = '';
+            form.appendChild(standardMessage('Booking failed! Contact support :(', 'error'));
+        }
+
     })
 
     return form;
@@ -63,7 +86,6 @@ const bookingForm = (courseId) => {
 export { bookingForm };
 
 async function fillForm() {
-    const userId = await new CookieHandler().getLoggedInUserIdCookie();
     const user = await new UserManager(userId).getSingleUser();
 
     const bookingData = {

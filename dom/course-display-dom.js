@@ -1,4 +1,4 @@
-import { createAside, createDiv, createSpan, createIcon, createLi, createUl, createLiIcon } from "./shared-dom.js";
+import { createAside, createDiv, createSpan, createIcon, createLi, createUl, createLiIcon, standardMessage } from "./shared-dom.js";
 import CookieHandler from "../lib/cookieHandler.js";
 import { bookingForm } from "./booking-form-dom.js";
 import BookingManager from "../App/BookingManager.js";
@@ -68,10 +68,7 @@ const courseDisplay = async (course) => {
     } else {
         const userId = new CookieHandler().getLoggedInUserIdCookie();
         if (await new BookingManager(userId, course.id).getBookingStatus()) {
-            const bookingMsg = createDiv();
-            bookingMsg.classList.add('simple-notice', 'simple-notice--success');
-            bookingMsg.textContent = `You have already booked this course :)`;
-            generalTextCon.appendChild(bookingMsg);
+            generalTextCon.appendChild(standardMessage('You have already booked this course :)', 'success'));
         } else {
             generalTextCon.appendChild(bookingForm(course.id));
         }
@@ -102,7 +99,6 @@ const courseDisplay = async (course) => {
     locationList.appendChild(locationHeader);
 
     if (course.location.online) {
-        // locationList.appendChild(createLi('Online'));
         const locationHeader = createLiIcon('iconoir-internet', 'Online');
         locationList.appendChild(locationHeader);
     }

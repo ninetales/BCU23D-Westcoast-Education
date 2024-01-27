@@ -42,3 +42,20 @@ export const createIcon = (text) => {
     icon.classList.add(text);
     return icon;
 }
+
+export const standardMessage = (text, messageType) => {
+    const messageCard = createDiv();
+
+    switch (messageType) {
+        case 'success':
+            messageCard.classList.add('simple-notice--success');
+            break;
+        case 'error':
+            messageCard.classList.add('simple-notice--error');
+            break;
+    }
+
+    messageCard.classList.add('simple-notice');
+    messageCard.textContent = text;
+    return messageCard;
+}
