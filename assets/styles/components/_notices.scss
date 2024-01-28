@@ -21,3 +21,14 @@
     padding: 20px;
     border-radius: .3rem;
 }
+
+.simple-notice {
+    border: 1px solid #eeee;
+    padding: 40px;
+    border-radius: .5rem;
+
+    &--success {
+        background-color: #d9ffd9;
+        border-color: #90db90;
+    }
+}
