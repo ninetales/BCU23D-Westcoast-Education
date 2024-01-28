@@ -58,3 +58,26 @@ header {
         }
     }
 }
+
+.sub-nav {
+    padding: 30px 0;
+
+    a {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none;
+        color: #000;
+    }
+}
+
+.desktop-nav {
+    display: none;
+}
+
+@media screen and (min-width: $tabletSize) {
+    .desktop-nav {
+        display: flex;
+        ;
+    }
+}

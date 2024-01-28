@@ -1,6 +1,6 @@
 #courses {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 20px;
 
     .course-card {
@@ -77,7 +77,7 @@
 
     &__body {
         display: grid;
-        grid-template-columns: 1fr 300px;
+        grid-template-columns: 1fr;
         gap: 20px;
         padding: 50px 0;
     }
@@ -173,5 +173,15 @@
 
     >li+li {
         border-top: 1px solid #eee;
+    }
+}
+
+@media screen and (min-width: $tabletSize) {
+    #courses {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .course-display-con__body {
+        grid-template-columns: 1fr 300px;
     }
 }

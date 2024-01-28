@@ -16,6 +16,13 @@ button {
 }
 
 .toggle-sidebar-btn {
-    display: none;
+    display: block;
     min-width: 80px;
+}
+
+
+@media screen and (min-width: $tabletSize) {
+    .toggle-sidebar-btn {
+        display: none;
+    }
 }
