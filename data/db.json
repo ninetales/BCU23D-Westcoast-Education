@@ -47,7 +47,6 @@
       },
       "courseCode": "WD101",
       "scheduledDate": "2024-02-10",
-      "courseStatus": {},
       "durationInDays": 7,
       "location": {
         "online": true,
@@ -355,5 +354,42 @@
       "price": 2800
     }
   ],
-  "enrollments": []
+  "enrollments": [
+    {
+      "id": "d3d8",
+      "userId": "1",
+      "courseId": "2",
+      "date": "2024-01-28",
+      "fname": "Alex",
+      "lname": "Benedict",
+      "email": "admin@demo.com",
+      "phone": "00 00 00 00 00",
+      "address": "Example street 13",
+      "location": "classroom"
+    },
+    {
+      "id": "32ea",
+      "userId": "1",
+      "courseId": "9",
+      "date": "2024-01-28",
+      "fname": "Alex",
+      "lname": "Benedict",
+      "email": "admin@demo.com",
+      "phone": "00 00 00 00 00",
+      "address": "Example street 13",
+      "location": "classroom"
+    },
+    {
+      "id": "7f93",
+      "userId": "2",
+      "courseId": "2",
+      "date": "2024-01-28",
+      "fname": "Stevie",
+      "lname": "Abbott",
+      "email": "student@demo.com",
+      "phone": "00 00 00 00 00",
+      "address": "Example street 12",
+      "location": "classroom"
+    }
+  ]
 }

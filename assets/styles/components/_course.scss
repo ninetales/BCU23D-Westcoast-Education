@@ -133,3 +133,45 @@
         }
     }
 }
+
+#booked-courses {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.course-enrollment-details {
+    display: flex;
+    flex-direction: column;
+
+    border: 1px solid #eee;
+
+    >ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        background-color: #eee;
+        padding: 20px;
+    }
+}
+
+.course-enrollments {
+
+    padding: 30px;
+    list-style-type: decimal;
+
+    li.course-enrollments__student {
+
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            padding: 20px;
+        }
+    }
+
+    >li+li {
+        border-top: 1px solid #eee;
+    }
+}

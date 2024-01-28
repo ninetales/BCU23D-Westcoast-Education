@@ -15,6 +15,11 @@ export const createUl = () => {
     return ul;
 }
 
+export const createOl = () => {
+    const ol = document.createElement('ol');
+    return ol;
+}
+
 export const createLi = (text) => {
     const li = document.createElement('li');
     li.textContent = text;
