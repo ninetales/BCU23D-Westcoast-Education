@@ -7,9 +7,9 @@ const courseCard = (course) => {
     const imgCon = createDiv();
     imgCon.classList.add('course-card__img-con');
     const img = document.createElement('img');
+
     if (course.image.src) {
-        // img.src = course.image.src;
-        img.src = "/assets/images/courses/no-img.png"; // Temporary
+        img.src = course.image.src;
     } else {
         img.src = "/assets/images/courses/no-img.png";
     }

@@ -53,7 +53,7 @@
         "classroom": true
       },
       "image": {
-        "src": "https://example.com/web_dev_course_image",
+        "src": "../assets/images/courses/webdev.jpeg",
         "description": "Web Development Course Image"
       },
       "featured": true,
@@ -74,7 +74,7 @@
         "classroom": true
       },
       "image": {
-        "src": "https://example.com/java_course_image",
+        "src": "../assets/images/courses/java.jpeg",
         "description": "Java Programming Course Image"
       },
       "featured": false,
@@ -95,7 +95,7 @@
         "classroom": false
       },
       "image": {
-        "src": "https://example.com/cybersecurity_course_image",
+        "src": "../assets/images/courses/cyber.jpeg",
         "description": "Cybersecurity Course Image"
       },
       "featured": true,
@@ -116,7 +116,7 @@
         "classroom": false
       },
       "image": {
-        "src": "https://example.com/react_course_image",
+        "src": "../assets/images/courses/react.jpeg",
         "description": "React.js Fundamentals Course Image"
       },
       "featured": false,
@@ -137,7 +137,7 @@
         "classroom": true
       },
       "image": {
-        "src": "https://example.com/dsa_course_image",
+        "src": "../assets/images/courses/data-str.jpeg",
         "description": "Data Structures and Algorithms Course Image"
       },
       "featured": true,
@@ -158,7 +158,7 @@
         "classroom": false
       },
       "image": {
-        "src": "https://example.com/flutter_course_image",
+        "src": "../assets/images/courses/flutter.jpeg",
         "description": "Flutter Mobile App Development Course Image"
       },
       "featured": false,
@@ -179,7 +179,7 @@
         "classroom": true
       },
       "image": {
-        "src": "https://example.com/devops_course_image",
+        "src": "../assets/images/courses/devops.jpeg",
         "description": "DevOps Fundamentals Course Image"
       },
       "featured": true,
@@ -200,7 +200,7 @@
         "classroom": false
       },
       "image": {
-        "src": "https://example.com/angular_course_image",
+        "src": "../assets/images/courses/angular.jpeg",
         "description": "Angular Framework Deep Dive Course Image"
       },
       "featured": false,
@@ -221,7 +221,7 @@
         "classroom": true
       },
       "image": {
-        "src": "https://example.com/docker_course_image",
+        "src": "../assets/images/courses/docker.jpeg",
         "description": "Docker and Containerization Course Image"
       },
       "featured": true,
@@ -242,7 +242,7 @@
         "classroom": false
       },
       "image": {
-        "src": "https://example.com/ml_python_course_image",
+        "src": "../assets/images/courses/machine.jpeg",
         "description": "Machine Learning with Python Course Image"
       },
       "featured": false,
@@ -263,7 +263,7 @@
         "classroom": false
       },
       "image": {
-        "src": "https://example.com/vuejs_course_image",
+        "src": "../assets/images/courses/vue.jpeg",
         "description": "Vue.js for Frontend Development Course Image"
       },
       "featured": true,
@@ -284,7 +284,7 @@
         "classroom": true
       },
       "image": {
-        "src": "https://example.com/blockchain_course_image",
+        "src": "../assets/images/courses/blockchain.jpeg",
         "description": "Blockchain Fundamentals Course Image"
       },
       "featured": true,
@@ -305,7 +305,7 @@
         "classroom": false
       },
       "image": {
-        "src": "https://example.com/aws_course_image",
+        "src": "../assets/images/courses/aws.jpeg",
         "description": "AWS Cloud Computing Course Image"
       },
       "featured": false,
@@ -326,7 +326,7 @@
         "classroom": false
       },
       "image": {
-        "src": "https://example.com/kotlin_course_image",
+        "src": "../assets/images/courses/kotlin.jpeg",
         "description": "Kotlin Programming Course Image"
       },
       "featured": true,
@@ -347,7 +347,7 @@
         "classroom": true
       },
       "image": {
-        "src": "https://example.com/spark_course_image",
+        "src": "../assets/images/courses/bigdata.jpeg",
         "description": "Big Data Analytics with Spark Course Image"
       },
       "featured": false,

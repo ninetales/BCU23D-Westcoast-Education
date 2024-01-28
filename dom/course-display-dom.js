@@ -14,8 +14,7 @@ const courseDisplay = async (course) => {
 
     const img = document.createElement('img');
     if (course.image.src) {
-        // img.src = course.image.src;
-        img.src = "/assets/images/courses/no-img.png"; // Temporary
+        img.src = course.image.src;
     } else {
         img.src = "/assets/images/courses/no-img.png";
     }
