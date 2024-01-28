@@ -31,6 +31,12 @@
     }
 }
 
+.sidebar__close-btn {
+    background-color: transparent;
+    border-bottom: 1px solid #eee;
+    border-right: 1px solid #eee;
+}
+
 .sidebar-nav {
     display: block;
     position: fixed;
@@ -84,6 +90,11 @@
         text-decoration: none;
         padding: pxToRem(10);
         min-height: pxToRem(40);
+        color: #000;
+    }
+
+    a.cta {
+        color: #fff !important;
     }
 }
 
