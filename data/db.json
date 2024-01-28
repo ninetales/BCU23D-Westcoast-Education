@@ -355,28 +355,5 @@
       "price": 2800
     }
   ],
-  "enrollments": [
-    {
-      "id": "a2ac",
-      "userId": "2",
-      "courseId": "1",
-      "date": "2024-01-27",
-      "fname": "Stevie",
-      "lname": "Abbott",
-      "email": "student@demo.com",
-      "phone": "00 00 00 00 00",
-      "address": "Example street 12"
-    },
-    {
-      "id": "4788",
-      "userId": "1",
-      "courseId": "6",
-      "date": "2024-01-27",
-      "fname": "Alex",
-      "lname": "Benedict",
-      "email": "admin@demo.com",
-      "phone": "00 00 00 00 00",
-      "address": "Example street 13"
-    }
-  ]
+  "enrollments": []
 }

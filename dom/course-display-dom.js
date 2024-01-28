@@ -70,7 +70,7 @@ const courseDisplay = async (course) => {
         if (await new BookingManager(userId, course.id).getBookingStatus()) {
             generalTextCon.appendChild(standardMessage('You have already booked this course :)', 'success'));
         } else {
-            generalTextCon.appendChild(bookingForm(course.id));
+            generalTextCon.appendChild(bookingForm(course));
         }
     }
 

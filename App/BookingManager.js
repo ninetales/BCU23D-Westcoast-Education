@@ -10,7 +10,8 @@ export default class BookingManager {
     #date = '';
     #email = '';
     #phone = 0;
-    constructor(userId, courseId, firstname, lastname, address, date, email, phone) {
+    #location = '';
+    constructor(userId, courseId, firstname, lastname, address, date, email, phone, location) {
         this.#userId = userId;
         this.#courseId = courseId;
         this.#firstname = firstname;
@@ -19,6 +20,7 @@ export default class BookingManager {
         this.#date = date;
         this.#email = email;
         this.#phone = phone;
+        this.#location = location;
     }
 
     async getBookingStatus() {
@@ -47,7 +49,8 @@ export default class BookingManager {
                 lname: this.#lastname,
                 email: this.#email,
                 phone: this.#phone,
-                address: this.#address
+                address: this.#address,
+                location: this.#location
             }
             const http = new HttpClient(`${settings.DB_ENROLLMENT_PATH}`);
             await http.add(bookingData);

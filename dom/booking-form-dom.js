@@ -5,7 +5,7 @@ import { standardMessage } from "./shared-dom.js";
 
 const userId = new CookieHandler().getLoggedInUserIdCookie();
 
-const bookingForm = (courseId) => {
+const bookingForm = (course) => {
     const form = document.createElement('form');
     form.classList.add('booking-form');
 
@@ -23,6 +23,34 @@ const bookingForm = (courseId) => {
     form.appendChild(createInput('Email*', 'email', '', '', true));
     form.appendChild(createInput('Phone*', 'phone', '', '', true));
 
+    const locationLabel = document.createElement('label');
+    const locationLabelText = document.createElement('span');
+    locationLabelText.textContent = 'Choose location*'
+    const location = document.createElement('select');
+    location.setAttribute('name', 'location');
+    location.setAttribute('required', '');
+    locationLabel.appendChild(locationLabelText);
+    locationLabel.appendChild(location);
+    form.appendChild(locationLabel);
+
+
+
+    if (course.location.online) {
+        const online = document.createElement('option');
+        online.value = 'online';
+        online.textContent = 'Online';
+        location.appendChild(online);
+    }
+
+    if (course.location.classroom) {
+        const classroom = document.createElement('option');
+        classroom.value = 'classroom';
+        classroom.textContent = 'Classroom';
+        location.appendChild(classroom);
+    }
+
+
+
     const hiddenFieldUserId = document.createElement('input');
     hiddenFieldUserId.setAttribute('name', 'userId');
     hiddenFieldUserId.setAttribute('type', 'hidden');
@@ -32,7 +60,7 @@ const bookingForm = (courseId) => {
     const hiddenFieldCourseId = document.createElement('input');
     hiddenFieldCourseId.setAttribute('name', 'courseId');
     hiddenFieldCourseId.setAttribute('type', 'hidden');
-    hiddenFieldCourseId.value = courseId;
+    hiddenFieldCourseId.value = course.id;
     form.appendChild(hiddenFieldCourseId);
 
     const hiddenFieldDate = document.createElement('input');
@@ -67,7 +95,7 @@ const bookingForm = (courseId) => {
         const obj = Object.fromEntries(bookingData.entries());
 
         const makeBooking = async () => {
-            await new BookingManager(userId, courseId, obj.firstname, obj.lastname, obj.address, obj.date, obj.email, obj.phone).bookCourse()
+            await new BookingManager(userId, course.id, obj.firstname, obj.lastname, obj.address, obj.date, obj.email, obj.phone, obj.location).bookCourse()
         }
         if (makeBooking()) {
             form.innerHTML = '';
