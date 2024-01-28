@@ -15,12 +15,22 @@
 
 .form-notice {
     display: block;
-    background-color: #ffdce0;
-    border: 1px solid #f0cfd3;
-    color: #8d2a3d;
     padding: 20px;
     border-radius: .3rem;
+
+    &--error {
+        background-color: #ffdce0;
+        border: 1px solid #f0cfd3;
+        color: #8d2a3d;
+    }
+
+    &--success {
+        background-color: #d9ffd9;
+        border-color: #90db90;
+        color: green;
+    }
 }
+
 
 .simple-notice {
     border: 1px solid #eeee;

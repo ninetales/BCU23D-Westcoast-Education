@@ -59,4 +59,14 @@ export default class BookingManager {
             throw new Error(error)
         }
     }
+
+    async getBookedCourses() {
+        try {
+            const http = new HttpClient(`${settings.DB_ENROLLMENT_PATH}`);
+            const result = await http.get();
+            return result;
+        } catch (error) {
+            throw new Error(error);
+        }
+    }
 }
