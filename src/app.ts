@@ -5,12 +5,14 @@ import { addNewCourse, displayCourse, displayCourses } from './lib/courseHandler
 import { logoutHandler } from './lib/logoutHandler.js';
 import { registerHandler } from './lib/registerHandler.js';
 import { displayBookedCourses } from './dom/booked-courses-dom.js';
+import { sidebarHandler } from './lib/sidebarHandler.js';
 
 const initApp = () => {
   console.log('Init app');
 
   getLoginCookie();
   logoutHandler();
+  sidebarHandler()
 
   switch (state.currentPage) {
     case '/':
