@@ -17,7 +17,6 @@ export async function getSingleUser(userId: number): Promise<User | null> { // U
 }
 
 export async function getUserByEmail(email: string): Promise<boolean> {
-
     const result = await fetchData('users', `email=${email}`);
     if (Array.isArray(result) && result.length > 0) {
         return true;

@@ -15,15 +15,20 @@ export const registerHandler = async () => {
         });
 
         const userEmail = registerData.email.toLowerCase().trim();
-        if (await getUserByEmail(userEmail)) {
-            formMessage(form, 'Looks like you already have an account :O Try logging in instead', 'error');
-        } else {
-            if (await registerUser(registerData)) {
-                formMessage(form, 'You have successfully created an account!', 'success');
-                form.reset();
+
+        if (userEmail) {
+            if (await getUserByEmail(userEmail)) {
+                formMessage(form, 'An account with this email is already in use', 'error');
             } else {
-                formMessage(form, 'Not able to register at this time. Contact support...', 'error');
+                if (await registerUser(registerData)) {
+                    formMessage(form, 'You have successfully created an account!', 'success');
+                    form.reset();
+                } else {
+                    formMessage(form, 'Not able to register at this time. Contact support...', 'error');
+                }
             }
+        } else {
+            formMessage(form, 'Please fill in an email address', 'error');
         }
 
     });
