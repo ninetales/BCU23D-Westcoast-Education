@@ -1,2 +1,1 @@
-# Westcoast-Education
-School Assignment @Medieinstitutet
+# Westcoast-Education-Typescript

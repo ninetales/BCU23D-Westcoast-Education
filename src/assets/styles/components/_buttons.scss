@@ -1,0 +1,32 @@
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 0;
+}
+
+.cta {
+    background-color: $primaryColor;
+    color: #fff;
+    text-decoration: none;
+    border-radius: .3rem;
+
+    &:hover {
+        background-color: shade($primaryColor, 10%);
+    }
+}
+
+.toggle-sidebar-btn {
+    display: block;
+    min-width: 80px;
+    background-color: transparent;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+
+}
+
+
+@media screen and (min-width: $tabletSize) {
+    .toggle-sidebar-btn {
+        display: none;
+    }
+}

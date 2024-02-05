@@ -1,0 +1,419 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "role": "admin",
+      "fname": "Alex",
+      "lname": "Benedict",
+      "email": "admin@demo.com",
+      "password": "demo",
+      "phone": "00 00 00 00 00",
+      "address": {
+        "city": "Gothenburg",
+        "postalCode": "123 23",
+        "street": "Example street 13"
+      },
+      "accountState": {
+        "status": "active",
+        "date": "2024-01-15"
+      }
+    },
+    {
+      "id": "2",
+      "role": "student",
+      "fname": "Stevie",
+      "lname": "Abbott",
+      "email": "student@demo.com",
+      "password": "demo",
+      "phone": "00 00 00 00 00",
+      "address": {
+        "city": "Gothenburg",
+        "postalCode": "123 23",
+        "street": "Example street 12"
+      },
+      "accountState": {
+        "status": "active",
+        "date": "2024-01-15"
+      }
+    }
+  ],
+  "courses": [
+    {
+      "id": "1",
+      "courseTitle": "Web Development with HTML and CSS",
+      "description": {
+        "short": "Build responsive and visually appealing websites.",
+        "long": "This course covers the fundamentals of web development, focusing on HTML and CSS to create modern and responsive websites."
+      },
+      "courseCode": "WD101",
+      "scheduledDate": "2024-02-10",
+      "durationInDays": 7,
+      "location": {
+        "online": true,
+        "classroom": true
+      },
+      "image": {
+        "src": "../assets/images/courses/webdev.jpeg",
+        "description": "Web Development Course Image"
+      },
+      "featured": true,
+      "price": 1800
+    },
+    {
+      "id": "2",
+      "courseTitle": "Java Programming Basics",
+      "description": {
+        "short": "Learn the fundamentals of Java programming language.",
+        "long": "This course provides a solid foundation in Java programming, covering syntax, data types, and basic programming concepts."
+      },
+      "courseCode": "JAVA102",
+      "scheduledDate": "2024-03-01",
+      "durationInDays": 5,
+      "location": {
+        "online": false,
+        "classroom": true
+      },
+      "image": {
+        "src": "../assets/images/courses/java.jpeg",
+        "description": "Java Programming Course Image"
+      },
+      "featured": false,
+      "price": 2200
+    },
+    {
+      "id": "3",
+      "courseTitle": "Cybersecurity Essentials",
+      "description": {
+        "short": "Explore fundamental concepts of cybersecurity.",
+        "long": "This course covers essential cybersecurity concepts, including threat detection, encryption, and best practices for securing digital assets."
+      },
+      "courseCode": "CYB101",
+      "scheduledDate": "2024-04-15",
+      "durationInDays": 8,
+      "location": {
+        "online": true,
+        "classroom": false
+      },
+      "image": {
+        "src": "../assets/images/courses/cyber.jpeg",
+        "description": "Cybersecurity Course Image"
+      },
+      "featured": true,
+      "price": 2500
+    },
+    {
+      "id": "4",
+      "courseTitle": "React.js Fundamentals",
+      "description": {
+        "short": "Build dynamic web applications with React.js.",
+        "long": "This course focuses on the fundamental concepts of React.js, enabling participants to build dynamic and interactive web applications."
+      },
+      "courseCode": "REACT201",
+      "scheduledDate": "2024-05-05",
+      "durationInDays": 6,
+      "location": {
+        "online": true,
+        "classroom": false
+      },
+      "image": {
+        "src": "../assets/images/courses/react.jpeg",
+        "description": "React.js Fundamentals Course Image"
+      },
+      "featured": false,
+      "price": 2000
+    },
+    {
+      "id": "5",
+      "courseTitle": "Data Structures and Algorithms in Python",
+      "description": {
+        "short": "Master the implementation of data structures and algorithms.",
+        "long": "This course provides in-depth knowledge and hands-on experience in implementing data structures and algorithms using Python."
+      },
+      "courseCode": "DSA301",
+      "scheduledDate": "2024-06-20",
+      "durationInDays": 10,
+      "location": {
+        "online": false,
+        "classroom": true
+      },
+      "image": {
+        "src": "../assets/images/courses/data-str.jpeg",
+        "description": "Data Structures and Algorithms Course Image"
+      },
+      "featured": true,
+      "price": 2800
+    },
+    {
+      "id": "6",
+      "courseTitle": "Mobile App Development with Flutter",
+      "description": {
+        "short": "Create cross-platform mobile apps with Flutter framework.",
+        "long": "This course guides participants in creating cross-platform mobile applications using the Flutter framework."
+      },
+      "courseCode": "FLUTTER202",
+      "scheduledDate": "2024-07-10",
+      "durationInDays": 7,
+      "location": {
+        "online": true,
+        "classroom": false
+      },
+      "image": {
+        "src": "../assets/images/courses/flutter.jpeg",
+        "description": "Flutter Mobile App Development Course Image"
+      },
+      "featured": false,
+      "price": 2300
+    },
+    {
+      "id": "7",
+      "courseTitle": "DevOps Fundamentals",
+      "description": {
+        "short": "Learn essential DevOps practices for efficient software development.",
+        "long": "This course covers key DevOps practices, tools, and methodologies to enhance the efficiency of software development and deployment."
+      },
+      "courseCode": "DEVOPS103",
+      "scheduledDate": "2024-08-15",
+      "durationInDays": 8,
+      "location": {
+        "online": false,
+        "classroom": true
+      },
+      "image": {
+        "src": "../assets/images/courses/devops.jpeg",
+        "description": "DevOps Fundamentals Course Image"
+      },
+      "featured": true,
+      "price": 2600
+    },
+    {
+      "id": "8",
+      "courseTitle": "Angular Framework Deep Dive",
+      "description": {
+        "short": "Explore advanced concepts of the Angular framework for web development.",
+        "long": "This course delves into advanced concepts of the Angular framework, empowering participants to build sophisticated web applications."
+      },
+      "courseCode": "ANGULAR301",
+      "scheduledDate": "2024-09-05",
+      "durationInDays": 6,
+      "location": {
+        "online": true,
+        "classroom": false
+      },
+      "image": {
+        "src": "../assets/images/courses/angular.jpeg",
+        "description": "Angular Framework Deep Dive Course Image"
+      },
+      "featured": false,
+      "price": 2200
+    },
+    {
+      "id": "9",
+      "courseTitle": "Docker and Containerization",
+      "description": {
+        "short": "Understand containerization with Docker for scalable and efficient applications.",
+        "long": "This course provides a comprehensive understanding of containerization using Docker, enabling participants to create scalable and efficient applications."
+      },
+      "courseCode": "DOCKER202",
+      "scheduledDate": "2024-10-10",
+      "durationInDays": 5,
+      "location": {
+        "online": false,
+        "classroom": true
+      },
+      "image": {
+        "src": "../assets/images/courses/docker.jpeg",
+        "description": "Docker and Containerization Course Image"
+      },
+      "featured": true,
+      "price": 2400
+    },
+    {
+      "id": "10",
+      "courseTitle": "Machine Learning with Python",
+      "description": {
+        "short": "Introduction to machine learning concepts and algorithms using Python.",
+        "long": "This course introduces participants to the fundamental concepts and algorithms of machine learning, focusing on implementation in Python."
+      },
+      "courseCode": "MLP101",
+      "scheduledDate": "2024-11-20",
+      "durationInDays": 9,
+      "location": {
+        "online": true,
+        "classroom": false
+      },
+      "image": {
+        "src": "../assets/images/courses/machine.jpeg",
+        "description": "Machine Learning with Python Course Image"
+      },
+      "featured": false,
+      "price": 2800
+    },
+    {
+      "id": "11",
+      "courseTitle": "Vue.js for Frontend Development",
+      "description": {
+        "short": "Build dynamic and interactive user interfaces with Vue.js.",
+        "long": "This course guides participants in building dynamic and interactive user interfaces using the Vue.js framework for frontend development."
+      },
+      "courseCode": "VUE101",
+      "scheduledDate": "2024-12-05",
+      "durationInDays": 6,
+      "location": {
+        "online": true,
+        "classroom": false
+      },
+      "image": {
+        "src": "../assets/images/courses/vue.jpeg",
+        "description": "Vue.js for Frontend Development Course Image"
+      },
+      "featured": true,
+      "price": 2000
+    },
+    {
+      "id": "12",
+      "courseTitle": "Blockchain Fundamentals",
+      "description": {
+        "short": "Explore the basics of blockchain technology.",
+        "long": "This course provides an introduction to the fundamental concepts of blockchain technology, covering decentralized ledgers, smart contracts, and cryptocurrencies."
+      },
+      "courseCode": "BLOCK101",
+      "scheduledDate": "2025-01-15",
+      "durationInDays": 8,
+      "location": {
+        "online": false,
+        "classroom": true
+      },
+      "image": {
+        "src": "../assets/images/courses/blockchain.jpeg",
+        "description": "Blockchain Fundamentals Course Image"
+      },
+      "featured": true,
+      "price": 2600
+    },
+    {
+      "id": "13",
+      "courseTitle": "AWS Cloud Computing",
+      "description": {
+        "short": "Learn cloud computing with Amazon Web Services (AWS).",
+        "long": "This course covers the basics of cloud computing using AWS, including services like EC2, S3, and AWS Lambda, enabling participants to deploy and manage applications in the cloud."
+      },
+      "courseCode": "AWS202",
+      "scheduledDate": "2025-02-28",
+      "durationInDays": 6,
+      "location": {
+        "online": true,
+        "classroom": false
+      },
+      "image": {
+        "src": "../assets/images/courses/aws.jpeg",
+        "description": "AWS Cloud Computing Course Image"
+      },
+      "featured": false,
+      "price": 2200
+    },
+    {
+      "id": "14",
+      "courseTitle": "Kotlin Programming",
+      "description": {
+        "short": "Master the Kotlin programming language for Android development.",
+        "long": "This course focuses on the Kotlin programming language, with an emphasis on building Android applications. Participants will learn the syntax, features, and best practices of Kotlin."
+      },
+      "courseCode": "KOTLIN201",
+      "scheduledDate": "2025-03-15",
+      "durationInDays": 7,
+      "location": {
+        "online": true,
+        "classroom": false
+      },
+      "image": {
+        "src": "../assets/images/courses/kotlin.jpeg",
+        "description": "Kotlin Programming Course Image"
+      },
+      "featured": true,
+      "price": 2400
+    },
+    {
+      "id": "15",
+      "courseTitle": "Big Data Analytics with Spark",
+      "description": {
+        "short": "Explore big data analytics using Apache Spark.",
+        "long": "This course introduces participants to big data analytics with Apache Spark, covering data processing, machine learning, and data streaming. Participants will gain hands-on experience with Spark through practical projects."
+      },
+      "courseCode": "SPARK301",
+      "scheduledDate": "2025-04-10",
+      "durationInDays": 9,
+      "location": {
+        "online": false,
+        "classroom": true
+      },
+      "image": {
+        "src": "../assets/images/courses/bigdata.jpeg",
+        "description": "Big Data Analytics with Spark Course Image"
+      },
+      "featured": false,
+      "price": 2800
+    }
+  ],
+  "enrollments": [
+    {
+      "id": "1",
+      "userId": "1",
+      "courseId": "2",
+      "date": "2024-01-28",
+      "fname": "Alex",
+      "lname": "Benedict",
+      "email": "admin@demo.com",
+      "phone": "00 00 00 00 00",
+      "address": "Example street 13",
+      "location": "classroom"
+    },
+    {
+      "id": "2",
+      "userId": "1",
+      "courseId": "9",
+      "date": "2024-01-28",
+      "fname": "Alex",
+      "lname": "Benedict",
+      "email": "admin@demo.com",
+      "phone": "00 00 00 00 00",
+      "address": "Example street 13",
+      "location": "classroom"
+    },
+    {
+      "id": "3",
+      "userId": "2",
+      "courseId": "2",
+      "date": "2024-01-28",
+      "fname": "Stevie",
+      "lname": "Abbott",
+      "email": "student@demo.com",
+      "phone": "00 00 00 00 00",
+      "address": "Example street 12",
+      "location": "classroom"
+    },
+    {
+      "id": "7026",
+      "userId": "1",
+      "courseId": "6",
+      "date": "2024-02-05",
+      "fname": "Alex",
+      "lname": "Benedict",
+      "email": "admin@demo.com",
+      "phone": "00 00 00 00 00",
+      "address": "Example street 13",
+      "location": "online"
+    },
+    {
+      "id": "8924",
+      "userId": "1",
+      "courseId": "10",
+      "date": "2024-02-05",
+      "fname": "Alex",
+      "lname": "Benedict",
+      "email": "admin@demo.com",
+      "phone": "00 00 00 00 00",
+      "address": "Example street 13",
+      "location": "online"
+    }
+  ]
+}

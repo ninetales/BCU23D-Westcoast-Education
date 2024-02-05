@@ -1,0 +1,119 @@
+.sidebar {
+    position: fixed;
+    display: block;
+    background-color: red;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    max-width: 300px;
+    transform: translateX(100%);
+
+    nav {
+        ul {
+            li {
+                padding: 20px;
+            }
+        }
+    }
+
+    &[data-sidebar-nav-active="true"] {
+        transform: translateX(0%);
+    }
+
+    &__close-btn {
+        border-radius: 0;
+        height: pxToRem(60);
+        width: pxToRem(60);
+
+
+        &:hover {}
+    }
+}
+
+.sidebar__close-btn {
+    background-color: transparent;
+    border-bottom: 1px solid #eee;
+    border-right: 1px solid #eee;
+}
+
+.sidebar-nav {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    max-width: pxToRem(300);
+    width: 100%;
+    transform: translateX(100%);
+    background-color: #fff;
+    color: #fff;
+    transition: transform .2s ease-in;
+
+    &[data-sidebar-nav-active="true"] {
+        transform: translateX(0%);
+    }
+
+    &__close-btn {
+        border-radius: 0;
+        height: pxToRem(60);
+        width: pxToRem(60);
+
+
+        &:hover {}
+    }
+
+    nav {
+        padding: 30px;
+    }
+
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    li {
+        transition: background-color .2s ease-in;
+
+        &:hover {}
+    }
+
+    li+li {
+        margin-top: pxToRem(10);
+    }
+
+    a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        padding: pxToRem(10);
+        min-height: pxToRem(40);
+        color: #000;
+    }
+
+    a.cta {
+        color: #fff !important;
+    }
+}
+
+.shadow {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #00000070;
+    z-index: 99;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.2s ease;
+
+    &[shadow-active="true"] {
+        visibility: visible;
+        opacity: 1;
+    }
+}

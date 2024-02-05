@@ -1,0 +1,50 @@
+.input-notice {
+    display: block;
+    color: #ac0c0c;
+    background-color: #fff2f2;
+    border: 1px solid #ffd3d3;
+    border-radius: .3rem;
+    padding: 10px;
+    font-size: 13px;
+}
+
+.input-error {
+    background-color: #fffafa;
+    border-color: #ffb5b5;
+}
+
+.form-notice {
+    display: block;
+    padding: 20px;
+    border-radius: .3rem;
+
+    &--error {
+        background-color: #ffdce0;
+        border: 1px solid #f0cfd3;
+        color: #8d2a3d;
+    }
+
+    &--success {
+        background-color: #d9ffd9;
+        border-color: #90db90;
+        color: green;
+    }
+
+    &--warning {
+        background-color: #dceaff;
+        border: 1px solid #cfd3f0;
+        color: #2a5a8d;
+    }
+}
+
+
+.simple-notice {
+    border: 1px solid #eeee;
+    padding: 40px;
+    border-radius: .5rem;
+
+    &--success {
+        background-color: #d9ffd9;
+        border-color: #90db90;
+    }
+}
