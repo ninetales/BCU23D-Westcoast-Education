@@ -6,13 +6,15 @@ import { logoutHandler } from './lib/logoutHandler.js';
 import { registerHandler } from './lib/registerHandler.js';
 import { displayBookedCourses } from './dom/booked-courses-dom.js';
 import { sidebarHandler } from './lib/sidebarHandler.js';
+import { setCopyrightDate } from './lib/copyrightHandler.js';
 
 const initApp = () => {
   console.log('Init app');
 
   getLoginCookie();
   logoutHandler();
-  sidebarHandler()
+  sidebarHandler();
+  setCopyrightDate();
 
   switch (state.currentPage) {
     case '/':
