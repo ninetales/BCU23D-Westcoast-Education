@@ -38,8 +38,8 @@ export async function bookCourse(formData: any): Promise<boolean | undefined> {
 
     try {
         const bookingData = {
-            userId: formData.userId,
-            courseId: formData.courseId,
+            userId: parseInt(formData.userId),
+            courseId: parseInt(formData.courseId),
             date: formData.date,
             fname: formData.firstname,
             lname: formData.lastname,
@@ -74,7 +74,7 @@ export const registerCourse = async (course: any): Promise<boolean | undefined> 
             },
             courseCode: course.courseCode,
             scheduledDate: '',
-            durationInDays: course.days,
+            durationInDays: parseInt(course.days),
             location: {
                 online: true,
                 classroom: true,
@@ -84,7 +84,7 @@ export const registerCourse = async (course: any): Promise<boolean | undefined> 
                 description: 'Image alt description text',
             },
             featured: false,
-            price: course.price,
+            price: parseInt(course.price),
         };
 
         const result = await addData('courses', courseData);

@@ -6,7 +6,7 @@ export const displayBookedCourses = async () => {
     const enrollments = await getBookedCourses();
 
     courses.forEach(course => {
-        const courseCard = createDiv()
+        const courseCard = createDiv();
         courseCard.classList.add('course-enrollment-details');
 
         const courseDetails = createUl();
@@ -16,8 +16,7 @@ export const displayBookedCourses = async () => {
         courseDetails.appendChild(createLi(`Duration: ${course.durationInDays} days`));
         courseCard.appendChild(courseDetails);
 
-        let enrolledStudents = enrollments ? enrollments.filter(student => student.courseId === course.id) : [];
-
+        let enrolledStudents = enrollments ? enrollments.filter(student => student.courseId === +course.id) : [];
 
         if (enrolledStudents.length !== 0) {
             const studentList = createOl();

@@ -42,8 +42,8 @@ export function bookCourse(formData) {
     return __awaiter(this, void 0, void 0, function* () {
         try {
             const bookingData = {
-                userId: formData.userId,
-                courseId: formData.courseId,
+                userId: parseInt(formData.userId),
+                courseId: parseInt(formData.courseId),
                 date: formData.date,
                 fname: formData.firstname,
                 lname: formData.lastname,
@@ -77,7 +77,7 @@ export const registerCourse = (course) => __awaiter(void 0, void 0, void 0, func
             },
             courseCode: course.courseCode,
             scheduledDate: '',
-            durationInDays: course.days,
+            durationInDays: parseInt(course.days),
             location: {
                 online: true,
                 classroom: true,
@@ -87,7 +87,7 @@ export const registerCourse = (course) => __awaiter(void 0, void 0, void 0, func
                 description: 'Image alt description text',
             },
             featured: false,
-            price: course.price,
+            price: parseInt(course.price),
         };
         const result = yield addData('courses', courseData);
         if (result) {

@@ -21,7 +21,7 @@ export const displayBookedCourses = () => __awaiter(void 0, void 0, void 0, func
         courseDetails.appendChild(createLi(`Scheduled date: ${course.scheduledDate}`));
         courseDetails.appendChild(createLi(`Duration: ${course.durationInDays} days`));
         courseCard.appendChild(courseDetails);
-        let enrolledStudents = enrollments ? enrollments.filter(student => student.courseId === course.id) : [];
+        let enrolledStudents = enrollments ? enrollments.filter(student => student.courseId === +course.id) : [];
         if (enrolledStudents.length !== 0) {
             const studentList = createOl();
             studentList.classList.add('course-enrollments');

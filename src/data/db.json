@@ -1,7 +1,7 @@
 {
   "users": [
     {
-      "id": "1",
+      "id": 1,
       "role": "admin",
       "fname": "Alex",
       "lname": "Benedict",
@@ -19,7 +19,7 @@
       }
     },
     {
-      "id": "2",
+      "id": 2,
       "role": "student",
       "fname": "Stevie",
       "lname": "Abbott",
@@ -39,7 +39,7 @@
   ],
   "courses": [
     {
-      "id": "1",
+      "id": 1,
       "courseTitle": "Web Development with HTML and CSS",
       "description": {
         "short": "Build responsive and visually appealing websites.",
@@ -60,7 +60,7 @@
       "price": 1800
     },
     {
-      "id": "2",
+      "id": 2,
       "courseTitle": "Java Programming Basics",
       "description": {
         "short": "Learn the fundamentals of Java programming language.",
@@ -81,7 +81,7 @@
       "price": 2200
     },
     {
-      "id": "3",
+      "id": 3,
       "courseTitle": "Cybersecurity Essentials",
       "description": {
         "short": "Explore fundamental concepts of cybersecurity.",
@@ -102,7 +102,7 @@
       "price": 2500
     },
     {
-      "id": "4",
+      "id": 4,
       "courseTitle": "React.js Fundamentals",
       "description": {
         "short": "Build dynamic web applications with React.js.",
@@ -123,7 +123,7 @@
       "price": 2000
     },
     {
-      "id": "5",
+      "id": 5,
       "courseTitle": "Data Structures and Algorithms in Python",
       "description": {
         "short": "Master the implementation of data structures and algorithms.",
@@ -144,7 +144,7 @@
       "price": 2800
     },
     {
-      "id": "6",
+      "id": 6,
       "courseTitle": "Mobile App Development with Flutter",
       "description": {
         "short": "Create cross-platform mobile apps with Flutter framework.",
@@ -165,7 +165,7 @@
       "price": 2300
     },
     {
-      "id": "7",
+      "id": 7,
       "courseTitle": "DevOps Fundamentals",
       "description": {
         "short": "Learn essential DevOps practices for efficient software development.",
@@ -186,7 +186,7 @@
       "price": 2600
     },
     {
-      "id": "8",
+      "id": 8,
       "courseTitle": "Angular Framework Deep Dive",
       "description": {
         "short": "Explore advanced concepts of the Angular framework for web development.",
@@ -207,7 +207,7 @@
       "price": 2200
     },
     {
-      "id": "9",
+      "id": 9,
       "courseTitle": "Docker and Containerization",
       "description": {
         "short": "Understand containerization with Docker for scalable and efficient applications.",
@@ -228,7 +228,7 @@
       "price": 2400
     },
     {
-      "id": "10",
+      "id": 10,
       "courseTitle": "Machine Learning with Python",
       "description": {
         "short": "Introduction to machine learning concepts and algorithms using Python.",
@@ -249,7 +249,7 @@
       "price": 2800
     },
     {
-      "id": "11",
+      "id": 11,
       "courseTitle": "Vue.js for Frontend Development",
       "description": {
         "short": "Build dynamic and interactive user interfaces with Vue.js.",
@@ -270,7 +270,7 @@
       "price": 2000
     },
     {
-      "id": "12",
+      "id": 12,
       "courseTitle": "Blockchain Fundamentals",
       "description": {
         "short": "Explore the basics of blockchain technology.",
@@ -291,7 +291,7 @@
       "price": 2600
     },
     {
-      "id": "13",
+      "id": 13,
       "courseTitle": "AWS Cloud Computing",
       "description": {
         "short": "Learn cloud computing with Amazon Web Services (AWS).",
@@ -312,7 +312,7 @@
       "price": 2200
     },
     {
-      "id": "14",
+      "id": 14,
       "courseTitle": "Kotlin Programming",
       "description": {
         "short": "Master the Kotlin programming language for Android development.",
@@ -333,7 +333,7 @@
       "price": 2400
     },
     {
-      "id": "15",
+      "id": 15,
       "courseTitle": "Big Data Analytics with Spark",
       "description": {
         "short": "Explore big data analytics using Apache Spark.",
@@ -356,9 +356,9 @@
   ],
   "enrollments": [
     {
-      "id": "1",
-      "userId": "1",
-      "courseId": "2",
+      "id": 1,
+      "userId": 1,
+      "courseId": 2,
       "date": "2024-01-28",
       "fname": "Alex",
       "lname": "Benedict",
@@ -368,9 +368,9 @@
       "location": "classroom"
     },
     {
-      "id": "2",
-      "userId": "1",
-      "courseId": "9",
+      "id": 2,
+      "userId": 1,
+      "courseId": 9,
       "date": "2024-01-28",
       "fname": "Alex",
       "lname": "Benedict",
@@ -380,9 +380,9 @@
       "location": "classroom"
     },
     {
-      "id": "3",
-      "userId": "2",
-      "courseId": "2",
+      "id": 3,
+      "userId": 2,
+      "courseId": 2,
       "date": "2024-01-28",
       "fname": "Stevie",
       "lname": "Abbott",
@@ -392,9 +392,9 @@
       "location": "classroom"
     },
     {
-      "id": "7026",
-      "userId": "1",
-      "courseId": "6",
+      "id": 4,
+      "userId": 1,
+      "courseId": 6,
       "date": "2024-02-05",
       "fname": "Alex",
       "lname": "Benedict",
@@ -404,9 +404,9 @@
       "location": "online"
     },
     {
-      "id": "8924",
-      "userId": "1",
-      "courseId": "10",
+      "id": 5,
+      "userId": 1,
+      "courseId": 10,
       "date": "2024-02-05",
       "fname": "Alex",
       "lname": "Benedict",
