@@ -1,6 +1,6 @@
 # Westcoast-Education-Typescript
 
-We were assigned a case to create a proof of concept website for an exucational website. 
+We were assigned a case to create a proof of concept website for an educational website. 
 
 The goal was to create the following:
 - A login/register system without any focus on security. 
