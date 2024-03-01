@@ -28,7 +28,7 @@ password: demo
 
 # Desktop screenshots of the application
 
-!['Frontpage'](screenshots/demo_1.jpg)
+!['Frontpage'](/screenshots/demo_1.jpg)
 !['Courses page'](screenshots/demo_2.jpg)
 !['Course page'](screenshots/demo_3.jpg)
 !['Login page'](screenshots/demo_4.jpg)
