@@ -28,10 +28,10 @@ password: demo
 
 # Desktop screenshots of the application
 
-!['Frontpage'](screenshots/demo_1.jpg)
-!['Courses page'](screenshots/demo_2.jpg)
-!['Course page'](screenshots/demo_3.jpg)
-!['Login page'](screenshots/demo_4.jpg)
-!['Create course page'](screenshots/demo_5.jpg)
-!['Booked courses page'](screenshots/demo_6.jpg)
-!['Book course if logged in'](screenshots/demo_7.jpg)
+!['Frontpage'](screenshots/demo_1.png)
+!['Courses page'](screenshots/demo_2.png)
+!['Course page'](screenshots/demo_3.png)
+!['Login page'](screenshots/demo_4.png)
+!['Create course page'](screenshots/demo_5.png)
+!['Booked courses page'](screenshots/demo_6.png)
+!['Book course if logged in'](screenshots/demo_7.png)
